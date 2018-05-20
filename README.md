@@ -8,7 +8,7 @@ which pdflatex
 ```
 Make sure the correct path is shown.
 
-To compile the tex into the pdf, do
+To compile the tex into the pdf, Do:
 ```
 pdflatex Jieru_Resume.tex
 ```
