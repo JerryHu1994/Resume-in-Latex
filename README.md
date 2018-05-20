@@ -1,2 +1,2 @@
 # Resume-in-Latex
-Resume
+Resume wrtten in Latex.
