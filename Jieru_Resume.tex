@@ -4,7 +4,7 @@
 %=================
 
 \documentclass[a4paper,11pt]{article}
-% include all packages
+% include all necessary packages
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -64,7 +64,7 @@
 \newcommand{\experienceItemStart}{\begin{itemize}}
 \newcommand{\experienceItemEnd}{\end{itemize}\vspace{-5pt}}
 
-% define each experience
+% define each experience Item
 \newcommand{\experienceItem}[1]{
   \item\small{
     \textit{#1 \vspace{-3pt}}
@@ -83,7 +83,7 @@
 % define the project item
 \newcommand{\projectItem}[2]{
 	\item\small{
-    \textbf{#1}{: #2 \vspace{-5pt}}
+    \textbf{#1}{: #2 \vspace{-6pt}}
   }
 }
 
@@ -102,6 +102,7 @@
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{0.8\baselineskip}{\baselineskip}
 
+%------------begin-------------
 \begin{document}
 \title{Jieru Hu's CV}
 \author{Jieru Hu}
@@ -112,7 +113,7 @@
 {\Huge Jieru Hu}\par\bigskip
 \begin{minipage}[b]{0.33333\textwidth}
 \raggedright
-11022 W Johnson St, APT 503 \par
+1022 W Johnson St, APT 503 \par
 Madison, WI, 53715
 \end{minipage}%
 \begin{minipage}[b]{0.33333\textwidth}
@@ -130,7 +131,7 @@ Phone: (608) 886-7529
 %-------------Education-------------
 \section{Education}
 	\educationHeader{University of Wisconsin Madison}{Madison, WI}
-	{    Bachelor of Engineering - Mechanical Engineering}{Aug 2013 – May 2018}{    Bachelor of Science - Computer Science}{GPA: 3.85/4.00}{    Bachelor of Science - Mathematics}{Dean list every semester}
+	{    Bachelor of Engineering - Mechanical Engineering (Graduated with Honor)}{Aug 2013 – May 2018}{    Bachelor of Science - Computer Science}{GPA: 3.85/4.00}{    Bachelor of Science - Mathematics}{Dean list every semester}
 
 %-------------Experience-------------
 \section{Experience}
@@ -202,12 +203,15 @@ Phone: (608) 886-7529
 %-----------Projects-------------
 \section{Projects}
 	\sectionStart
-		\projectItem{Used-Car data Analysis}
-		{Crawl and clean car data from cars.com and perform query price analysis}
-		\projectItem{GPU Implementation of Texture Synthesis}
-		{Accelerated Implementation of Texture Synthesis on GPU architecture}
+		\projectItem{DataScience on Used Car}
+		{Crawl and clean data from cars.com, and perform entity-match and query analysis}
+		\projectItem{Texture Synthesis on GPU}
+		{Parallel Implementation of Texture Synthesis on CUDA architecture}
+		\projectItem{Name Extraction from IMDB Comments}
+		{Learning-based information extractor which extracts person names from natural test}
+		\projectItem{Breast Cancer Diagnosis}
+		{Use quadratic programming to calculate SVM for clinical datasets and predict FNA malignancy}
 	\sectionEnd
-
 
 %-----------Course Work------
 \section{CourseWork}
@@ -219,7 +223,7 @@ Phone: (608) 886-7529
 		\skillItem{Languages}
 		{Java, Python, C, C++, Obj-C, MATLAB, Perl, JavaScript, SQL, PHP, Bash, R, HTML, CSS, XML, JSON}
 		\skillItem{Technologies}
-		{CUDA, OpenMP, MPI, ROS, Xcode, iOS-SDK, OpenCV, MySQL, MongoDB, MariaDB, Git, Tensor Flow, Pandas, Guice, ReactJs, Laveral}
+		{CUDA, OpenMP, MPI, ROS, Xcode, iOS-SDK, OpenCV, MySQL, MongoDB, MariaDB, Git, Tensor Flow, scikit-learn, Pandas, Guice, ReactJs, Laveral}
 	\sectionEnd
 
 \end{document}
