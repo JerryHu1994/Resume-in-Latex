@@ -1,5 +1,5 @@
 # Resume-in-Latex
-Resume wrtten in Latex.
+Resume written in Latex.
 
 To compile, first make sure you have pdflatex installed on your machine.
 Do:
