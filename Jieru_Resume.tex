@@ -26,7 +26,7 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -37,18 +37,15 @@
 
 % change the section format
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-
 % define education header
-\newcommand{\educationHeader}[8]{
+\newcommand{\educationHeader}[4]{
   \vspace{-1pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{#2} \\
       \textit{\small#3} & \textit{\small #4} \\
-       \textit{\small#5} & \textit{\small #6} \\
-        \textit{\small#7} &  \textit{\small #8}\\
     \end{tabular*}\vspace{-5pt}
 }
 % define course work
@@ -100,7 +97,7 @@
 
 % set space between sections
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{0.8\baselineskip}{\baselineskip}
+\titlespacing*{\section}{0pt}{1.0\baselineskip}{\baselineskip}
 
 %------------begin-------------
 \begin{document}
@@ -130,8 +127,8 @@ Phone: (608) 770-9836
 
 %-------------Education-------------
 \section{Education}
-	\educationHeader{University of Wisconsin Madison}{Madison, WI}
-	{    Bachelor of Engineering - Mechanical Engineering (Graduated with Honor)}{Aug 2013 – May 2018}{    Bachelor of Science - Computer Science}{GPA: 3.85/4.00}{    Bachelor of Science - Mathematics}{Dean list every semester}
+	\educationHeader{University of Wisconsin Madison}{Aug 2013 – May 2018}
+	{Bachelor of Science in Engineering - Mechanical Engineering, Computer Science, Mathematics}{GPA: 3.85/4.00}
 
 %-----------Course Work------
 \section{CourseWork}
@@ -145,7 +142,11 @@ Phone: (608) 770-9836
 		{Amazon}{June 2018 - Now}
 			\experienceItemStart			
 				\experienceItem
-				{Gateway development for Amazon India}
+				{Developed Blackjack cards for Amazon India Gateway and Browse page through a data phase and a rendering phase using Perl Mason Framework}
+				\experienceItem
+				{Maintained and documented the team service deployment pipeline, feature testing and sanity testing}
+				\experienceItem
+				{Integrated Blackjack cards with automated scheduling services and reduced manual campaign by 45 \%}
 			\experienceItemEnd
 			
 		\experienceHeader
@@ -155,7 +156,7 @@ Phone: (608) 770-9836
 				\experienceItem
 				{Implemented the trajectory motion planning for  6-DOF Kinova MICO arm with MoveIt framework}
 				\experienceItem
-				{Developed python scripts in ROS to execute various industrial manufacturing tasks with MICO arm}
+				{Developed python scripts in ROS to execute various industrial manufacturing tasks on KINOVA MICO arm}
 				\experienceItem
 				{Designed and built the communication interface between NodeJS UI server and Python Http server}
 			\experienceItemEnd
@@ -165,11 +166,11 @@ Phone: (608) 770-9836
 		{Amazon}{June 2017 - August 2017}
 			\experienceItemStart	
 				\experienceItem
-				{Designed and implemented Screenshot Social Sharing feature into Kindle iOS App production in Objective-C}		
+				{Designed and implemented Screenshot Social Sharing feature into Kindle iOS App production using Obj-C}		
 				\experienceItem
-				{Built Java Coral service APIs to store Encoded Voice data into AWS S3 bucket within Guice framework}
+				{Built Java service APIs to store and retrieve Encoded Voice data into/from AWS S3 bucket within Guice}
 				\experienceItem
-				{Developed the voice annotation feature in Kindle iOS notebook with an End-To-End model to synchronize client voice data across multiple devices}
+				{Developed the voice annotation feature in Kindle iOS notebook with an end-to-end model to synchronize client voice data across multiple devices}
 			\experienceItemEnd
 		
 		\experienceHeader
@@ -196,34 +197,33 @@ Phone: (608) 770-9836
 				{Parallelized engine simulation code in python with different input temperature and pressure combinations}
 				\experienceItem
 				{Prepared HTCondor job submit scripts and managed engine simulation jobs in HTCondor Cluster}		
-			\experienceItemEnd
-			
+			\experienceItemEnd		
 	\sectionEnd
 
 %-----------Projects-------------
-\section{Projects}
+\section{Selected Projects}
 	\sectionStart
 		\projectItem{DataScience on Used Car}
 		{Crawl and clean data from Cars.com, followed by entity-matching and query analysis}
 		\projectItem{Texture Synthesis on GPU}
 		{Parallel Implementation of Texture Synthesis on CUDA architecture}
-		\projectItem{Name Extraction from IMDB Comments}
-		{Learning-based information extractor implemented with cross-validation on five machine learning methods, which extracts person names from natural text}
+		\projectItem{Name Extraction on IMDB Comments}
+		{Learning-based information extractor implemented with cross-validation on five machine learning methods, extracting person names from natural text}
+		\projectItem{Computational Geometry in Python}
+		{Constructed and maintained Delaunay triangulation and Voronoi diagram for arbitrary set of points in the plane using a self-designed data structure capable of answering geometric queries}
 		\projectItem{Breast Cancer Diagnosis}
 		{Use quadratic programming methods to calculate SVM based on clinical datasets and predict malignancy in diagnostic procedure}
-		\projectItem{Computational Geometry in Python}
-		{Constructed and maintained Delaunay triangulation and Voronoi diagram for arbitrary set of points in the plane with a self-designed data structure capable of answering geometric queries}
 		\projectItem{Tic Tac Toe in React}
 		{Implemented an interactive tic-tac-toe game in the ReactJS framework}
 	\sectionEnd
 
-%-----------Skills-------------
+%-----------Skills-------------m
 \section{Skills}
 	\sectionStart
 		\skillItem{Languages}
-		{Java, Python, C, C++, Obj-C, MATLAB, Perl, JavaScript, SQL, PHP, Bash, R, HTML, CSS, XML, JSON, Latex}
+		{Python, Java, C, C++, Obj-C, MATLAB, Perl, JavaScript, SQL, PHP, Bash, R, HTML, CSS, XML, JSON, Latex}
 		\skillItem{Technologies}
-		{CUDA, OpenMP, MPI, ROS, Xcode, iOS-SDK, OpenCV, MySQL, MongoDB, MariaDB, Git, Tensor Flow, scikit-learn, Pandas, Guice, ReactJs, Laveral}
+		{CUDA, OpenMP, MPI, ROS, Xcode, iOS-SDK, OpenCV, Mason, Jquery, MySQL, MongoDB, MariaDB, Git, Tensor Flow, scikit-learn, Pandas, Guice, ReactJs, Laveral}
 	\sectionEnd
 
 \end{document}
