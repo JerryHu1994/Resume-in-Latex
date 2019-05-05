@@ -80,7 +80,7 @@
 % define the project item
 \newcommand{\projectItem}[2]{
 	\item\small{
-    \textbf{#1}{: #2 \vspace{-6pt}}
+    \textbf{#1}{: #2 \vspace{-5pt}}
   }
 }
 
@@ -93,11 +93,11 @@
 
 % define the section start and end wrapper
 \newcommand{\sectionStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\sectionEnd}{\end{itemize}}
+\newcommand{\sectionEnd}{\end{itemize}}{\vspace{-100pt}}
 
 % set space between sections
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{1.0\baselineskip}{\baselineskip}
+\titlespacing*{\section}{1pt}{1.0\baselineskip}{\baselineskip}
 
 %------------begin-------------
 \begin{document}
@@ -128,7 +128,8 @@ Phone: (608) 770-9836
 
 %-------------Education-------------
 \section{Education}
-	\educationHeader{University of Wisconsin Madison}{Aug 2013 – May 2018}
+	\educationHeader
+	{University of Wisconsin Madison}{Aug 2013 – May 2018}
 	{Bachelor of Science in Engineering - Mechanical Engineering, Computer Science, Mathematics}{GPA: 3.85/4.00}
 
 %-----------Course Work------
@@ -143,7 +144,7 @@ Phone: (608) 770-9836
 		{Microsoft}{April 2019 - Now}
 			\experienceItemStart			
 				\experienceItem
-				{Under Azure Compute, Cloud + AI team}
+				{Building cloud scale distributed compute management and job scheduling service for Azure Batch}
 			\experienceItemEnd
 		\experienceHeader
 		{Software Development Engineer}{Seattle, WA}
@@ -151,6 +152,8 @@ Phone: (608) 770-9836
 			\experienceItemStart			
 				\experienceItem
 				{Developed Blackjack card widgets on Amazon India Gateway and Browse page through a server-side data phase integrated with various backend APIs and a client-side UI/UX rendering phase under Perl Mason Framework}
+				\experienceItem
+				{Contributed to the HOTW(Hands-Off-the-Wheel) project which automates content scheduling on thousands of the browse pages, thus minimizing the merchandising effort}
 				\experienceItem
 				{Wrote unit tests for Perl utility files and Java UI tests under Selenium automation framework}
 				\experienceItem
@@ -190,8 +193,6 @@ Phone: (608) 770-9836
 				\experienceItem
 				{Developed a low memory-consuming backend service in C to parse code assessment result from XML into JSON}
 				\experienceItem
-				{Upgraded and documented the SWAMP Perl runtime version from 5.18.1 to 5.26.1 on CentOS}	
-				\experienceItem
 				{Implemented a trigger in PHP server to launch automatic assessment of new code by GitHub Webhook event}		
 				\experienceItem
 				{Organized and stored SWAMP assessment result data into MongoDB}		
@@ -206,9 +207,8 @@ Phone: (608) 770-9836
 				\experienceItem
 				{Implemented kernel functions for bilinear rescale, pixel Markov property evaluation, box filtering, etc}
 				\experienceItem
-				{Benchmarked both CPU and GPU runtime, and perform scaling analysis based on different synthesis parameters}
+				{Benchmarked both CPU and GPU runtime, and performed scaling analysis over different synthesis parameters}
 			\experienceItemEnd
-
 	\sectionEnd
 
 %-----------Projects-------------
@@ -230,9 +230,9 @@ Phone: (608) 770-9836
 \section{Skills}
 	\sectionStart
 		\skillItem{Languages}
-		{Python, Java, C, C++, Obj-C, MATLAB, Perl, JavaScript, SQL, PHP, Bash, R, HTML, CSS, XML, JSON, Latex}
+		{Python, Java, C\#, P\#, C, C++, Obj-C, MATLAB, Perl, JavaScript, SQL, PHP, Bash, R, HTML, CSS, XML, JSON, Latex}
 		\skillItem{Technologies}
-		{CUDA, OpenMP, MPI, ROS, Xcode, iOS-SDK, OpenCV, Mason, Jquery, MySQL, MongoDB, MariaDB, Git, Tensor Flow, scikit-learn, Pandas, Guice, ReactJs, Laveral}
+		{CUDA, GRPC, OpenMP, MPI, ROS, Xcode, iOS-SDK, OpenCV, Mason, Jquery, MySQL, MongoDB, MariaDB, Git, Tensor Flow, scikit-learn, Pandas, Guice, ReactJs, Laveral}
 	\sectionEnd
 
 \end{document}
