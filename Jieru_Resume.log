@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 MAY 2019 10:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 AUG 2019 23:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -282,23 +282,23 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 220.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 210.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
  [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (./Jieru_Resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `Jieru_Resume.out' has not changed.
 (rerunfilecheck)             Checksum: EB077C09891C20402E8BF994EAC60BBD;182.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
  5889 strings out of 492649
  86112 string characters out of 6129622
- 188384 words of memory out of 5000000
+ 187384 words of memory out of 5000000
  9737 multiletter control sequences out of 15000+600000
  8906 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -309,7 +309,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Jieru_Resume.pdf (1 page, 96621 bytes).
+Output written on Jieru_Resume.pdf (1 page, 97401 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
